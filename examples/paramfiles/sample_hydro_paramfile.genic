@@ -1,0 +1,34 @@
+# ===== RESOLUTION =====
+BoxSize = $$__GFS__$$
+Ngrid = $$__GFS__$$
+ProduceGas = 1
+
+# ===== COSMOLOGY =====
+HubbleParam = 0.6736
+OmegaLambda = 0.6847
+Omega0 = 0.3153
+OmegaBaryon = 0.0493
+CMBTemperature = 2.7255
+
+# ===== CLASS =====
+WhichSpectrum = 2
+FileWithInputSpectrum = class_pk_$$__GFS__$$.dat
+DifferentTransferFunctions = 1
+FileWithTransferFunction = class_tk_$$__GFS__$$.dat
+Redshift = $$__GFS__$$
+Sigma8 = 0.8111
+PrimordialAmp = 2.1e-9
+PrimordialIndex  = 0.9649
+
+# ===== OUTPUT =====
+Seed = $$__GFS__$$
+OutputDir = ../ICs
+FileBase = IC
+
+# ===== UNITS =====
+UnitLength_in_cm = 3.085678e21
+UnitMass_in_g = 1.989e43
+UnitVelocity_in_cm_per_s = 1e5
+
+# ===== RESOURCE =====
+MaxMemSizePerNode = 0.8

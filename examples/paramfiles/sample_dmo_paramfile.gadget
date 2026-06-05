@@ -1,0 +1,51 @@
+# ===== COSMOLOGY =====
+HubbleParam = 0.6736
+OmegaLambda = 0.6847
+Omega0 = 0.3153
+OmegaBaryon = 0.0493
+
+
+# =================
+# ===== INPUT =====
+# =================
+InitCondFile = ../ICs/IC
+
+
+# ==================
+# ===== OUTPUT =====
+# ==================
+TimeMax = 1.0000
+OutputList = $$__GFS__$$
+OutputDir = ../SNAPS
+
+
+# ====================
+# ===== RESOURCE =====
+# ====================
+TimeLimitCPU = $$__GFS__$$  #N hours
+MaxMemSizePerNode = 0.8
+
+
+# ====================
+# ===== DMO =====
+# ====================
+CoolingOn = 0
+StarformationOn = 0
+RadiationOn = 1
+BlackHoleOn = 0
+MetalReturnOn = 0
+DensityIndependentSphOn = 1
+HydroOn = 0
+WindOn = 0
+MassiveNuLinRespOn = 0
+
+
+# =====================
+# ===== FOF Halos =====
+# =====================
+SnapshotWithFOF = 1
+FOFHaloLinkingLength = 0.2
+FOFHaloMinLength = 32
+
+
+
