@@ -34,7 +34,7 @@ def gen_powerspectrum(redshift,filepath:str=None):
     # STEP 5 : Extract the power spectrum at the desired redshift.
     # Reference for units: classy.pyx -> def pk_lin(...)
     h=params['h']
-    k = np.logspace(-2, 3, 1000)    # k in h/Mpc
+    k = np.logspace(-5, 3, 1000)    # k in h/Mpc
     kh = k*h                        # k in 1/Mpc
 
     Pnonlin = np.array([cosmo.pk(ki, redshift) for ki in kh])
@@ -67,7 +67,7 @@ def get_powerspectrum(redshift, cache_dir:str):
 
 
 if __name__ == "__main__":
-    REDSHIFT = 0
+    REDSHIFT = 99
     CACHE_DIR = "/home/ranit/gfs/cache"
     k, pk_lin, pk_nonlin = get_powerspectrum(REDSHIFT, CACHE_DIR)
 
@@ -77,7 +77,7 @@ if __name__ == "__main__":
     plt.loglog(k, pk_lin, label='Linear Power Spectrum')
     plt.loglog(k, pk_nonlin, label='Non-linear Power Spectrum')
     plt.xlabel('k [h/Mpc]')
-    plt.ylabel('P(k) [(Mpc/h)^3]')
+    plt.ylabel('P(k) [(Mpc/h)$^3$]')
     plt.title(f'Power Spectrum at z={REDSHIFT}')
     plt.legend(frameon=False, loc='lower left')
     plt.show()
