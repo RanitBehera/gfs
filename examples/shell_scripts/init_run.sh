@@ -33,6 +33,7 @@ fi
 
 # Check if classy is installed in the current conda environment
 # --------------------------------------------------------------
+# change to 'conda' or 'pip' depending on how classy was installed 
 version=$(conda list '^classy$' | awk '!/^#/ {print $2}')
 if [ -n "$version" ]; then
     echo "classy is installed : ${FG_GREEN}Yes (version $version)${FG_RESET}"

@@ -83,6 +83,15 @@
   ```
   conda env remove -n gfs
   ```
+  Change disable/enable auto activate 'base' env. (Run it only once)
+  ```
+  conda config --set auto_activate false
+  conda config --set auto_activate true
+  ```
+  To auto start a conda env in `.bashrc` add
+  ```
+  conda activate gfs
+  ```
 
 - bigfile
   ```
@@ -94,7 +103,7 @@
   ```
 - classy
   ```
-  pip install 
+  pip install classy
   ```
   if `curl` not installed
   ```

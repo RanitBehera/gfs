@@ -23,7 +23,7 @@ def gen_powerspectrum(redshift,filepath:str=None):
     # STEP 2 : Create an instance of the CLASS wrapper.
     cosmo = Class()
 
-    # STEP 3 : # STEP 3 : Set the parameters to the cosmological code.
+    # STEP 3 : Set the parameters to the cosmological code.
     cosmo.set(params)
 
     # STEP 4 : Run the whole code.
