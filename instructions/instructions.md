@@ -124,4 +124,23 @@
   ```
 
 
+### L200N64 Simulation Box
+- Extract using
+  ```
+  tar -xvzf L200N64_DMO.tar.gz
+  ``` 
   
+  The link to download the tar file is in course information file.
+
+
+
+
+
+
+
+
+
+
+
+
+
