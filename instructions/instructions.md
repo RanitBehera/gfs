@@ -109,3 +109,19 @@
   ```
   sudo apt install curl
   ```
+- To pull updates from orgin
+  ```
+  git pull
+  ```
+  This is equivalent to
+  ```
+  git fetch
+  git merge
+  ```
+  pull a branch
+  ```
+  git pull origin main
+  ```
+
+
+  
