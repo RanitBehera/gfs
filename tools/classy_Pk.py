@@ -67,7 +67,7 @@ def get_powerspectrum(redshift, cache_dir:str):
 
 
 if __name__ == "__main__":
-    REDSHIFT = 99
+    REDSHIFT = 0
     CACHE_DIR = "/home/ranit/gfs/cache"
     k, pk_lin, pk_nonlin = get_powerspectrum(REDSHIFT, CACHE_DIR)
 

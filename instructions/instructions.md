@@ -132,6 +132,10 @@
   
   The link to download the tar file is in course information file.
 
+### NINJA python package install
+  ```
+  pip install -e <path>
+  ```
 
 
 
